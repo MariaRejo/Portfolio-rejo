@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title> Portfolio — MARIA REJO</title>
+  <meta name="description" content="Professional portfolio & web developer template — clean, responsive, and accessible.">
+  <style>
+    :root{
+      --bg:#0f1724; /* charcoal */
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#6ee7b7; /* mint */
+      --glass: rgba(255,255,255,0.04);
+      --radius:10px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:130%}
+    body{
+      margin:0;
+      background: linear-gradient(180deg,#31114f 0%, #7511ae 60% );
+      color: #c38ed5;I'm a passionate full stack developer with a strong drive to learn and adapt quickly. I thrive on exploring new technologies and mastering them in a short time, constantly pushing myself to stay ahead in a fast-evolving field. During my college days, I was recognized for my leadership qualities and effective orating skills, which helped me lead teams and communicate ideas with confidence and clarity.I'm a passionate full stack developer with a strong drive to learn and adapt quickly. I thrive on exploring new technologies and mastering them in a short time, constantly pushing myself to stay ahead in a fast-evolving field. During my college days, I was recognized for my leadership qualities and effective orating skills, which helped me lead teams and communicate ideas with confidence and clarity.
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:30px;
+    }
+    .container{max-width:1100px;margin:0 auto}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:100px;height:50px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#607df0);display:flex;align-items:center;justify-content:center;font-weight:700;color:#042029}
+    nav{display:flex;gap:16px}
+    a{color:var(--muted);text-decoration:none;font-weight:600}
+    a:hover{color:var(--accent)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center;margin-top:36px}
+    .intro h1{font-size:clamp(28px,5vw,44px);margin:0 0 12px}
+    .intro p{color:var(--muted);margin:0 0 22px}
+    .cta{display:flex;gap:12px}
+    .btn{background:linear-gradient(90deg,var(--accent),#073165);border:none;padding:10px 18px;border-radius:12px;color:#042029;font-weight:700;cursor:pointer}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    /* Card */
+    .card{background:linear-gradient(180deg,rgba(55, 8, 8, 0),transparent);padding:18px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(3, 6, 22, 0.6);}
+    .profile{display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center}
+    .avatar{width:300px;height:140px;border-radius:20px;background:linear-gradient(135deg,#326ba9,#052644);display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:700;color:var(--accent)}
+    .meta{color:var(--muted);font-size:15px}
+
+    /* Projects */
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .project{padding:14px;border-radius:12px;background:var(--card);border:1px solid var(--glass)}
+    .project h3{margin:0 0 8px;font-size:16px}
+    .project p{margin:0;color:var(--muted);font-size:13px}
+
+    /* Contact */
+    .contact{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    input,textarea{width:100%;padding:12px;border-radius:10px;background:#2e053a;border:1px solid rgba(255,255,255,0.03);color:inherit}
+    textarea{min-height:120px;resize:vertical}
+
+    footer{margin-top:36px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;align-items:center}
+
+    /* Responsiveness */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .projects{grid-template-columns:repeat(2,1fr)}
+      .contact{grid-template-columns:1fr}
+    }
+    @media (max-width:520px){
+      body{padding:18px}
+      .projects{grid-template-columns:1fr}
+    }
+
+    /* Subtle micro-interactions */
+    .project, .card{transition:transform .30s ease, box-shadow .28s ease}
+    .project:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(126, 28, 165, 0.6)}
+    .logo{transition:transform .28s ease}
+    .logo:hover{transform:rotate(-6deg) scale(1.03)}
+
+    /* Accessibility */
+    a:focus, button:focus, input:focus, textarea:focus{outline:3px solid rgba(110,231,183,0.14);outline-offset:3px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>MARIA REJO</div>
+        <div>
+          <div style="font-weight:700"> Full stack Developer</div>
+          <div style="font-size:13px;color:var(--muted)"> • Developer • Creator </div>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="intro">
+        <div class="intro">
+          <h1 id="intro">Thoughtful web experiences.</h1>
+          <p>I'm a passionate full stack developer with a strong drive to learn and adapt quickly. I thrive on exploring new technologies and mastering them in a short time, constantly pushing myself to stay ahead in a fast-evolving field. During my college days, I was recognized for my leadership qualities and effective orating skills, which helped me lead teams and communicate ideas with confidence and clarity.</p>
+          <div class="cta">
+            <button class="btn" onclick="scrollToSection('work')">See my work</button>
+            <button class="btn secondary" onclick="scrollToSection('contact')">Get in touch</button>
+          </div>
+
+          <div class="card" style="margin-top:22px;display:flex;gap:14px;align-items:center">
+            <div style="flex:1">
+              <div style="font-weight:700">Available for freelance & contract</div>
+              <div class="meta">Open to remote roles — available anytime,flexible hours.</div>
+            </div>
+            <div style="text-align:right;color:var(--muted);font-size:13px">Updated — Sep 2025</div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card profile">
+            <div class="avatar" aria-hidden>Full stack developer</div>
+            <div style="font-weight:700">MARIA REJO</div>
+            <div class="meta">Front-end & Back-end Developer</div>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <a href="#contact" class="btn" style="padding:8px 12px">Hire me</a>
+              <a href="#work" class="btn secondary" style="padding:8px 12px">Portfolio</a>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:16px;padding:12px">
+            <div style="font-weight:800;margin-bottom:8px">Skills</div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <span class="tag" style="background:rgba(255,255,255,0.02);padding:6px 10px;border-radius:8px;font-size:15px;color:var(--muted)">HTML</span>
+              <span class="tag" style="background:rgba(255,255,255,0.02);padding:6px 10px;border-radius:8px;font-size:15px;color:var(--muted)">CSS</span>
+              <span class="tag" style="background:rgba(255,255,255,0.02);padding:6px 10px;border-radius:8px;font-size:15px;color:var(--muted)">JavaScript</span>
+             <span class="tag" style="background:rgba(255,255,255,0.02);padding:6px 10px;border-radius:8px;font-size:15px;color:var(--muted)">Angular</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="work" aria-labelledby="work-heading">
+        <h2 id="work-heading" style="margin-top:34px">Selected Work</h2>
+        <div class="projects" role="list">
+          <article class="project" role="listitem">
+            <h3>Portfolio Website</h3>
+            <p>A personal site showcasing your skills and projects.STACK:HTML,CSS,Javascript,React.</p>
+          </article>
+          <article class="project" role="listitem">
+            <h3>E-Commerce Web App</h3>
+            <p>Online shop with product listings,cart,and checksout system. STACK:React(front end), Node.js+Express(back end),MongoDB(database).</p>
+          </article>
+          <article class="project" role="listitem">
+            <h3>To-Do App / Task manager</h3>
+            <p>Web app for addding,editing,and tracking daily tasks. STACK:React/Angular(front end), Node.js/Express(back end),MySQL(database).</p>
+          </article>
+          <article class="project" role="listitem">
+            <h3>Chat Bot</h3>
+            <p>I developed a Q/A system chatbot as part of a full stack project, combining frontend and backend technologies to create an interactive, user-friendly platform. The chatbot is designed to understand natural language queries and respond with accurate answers using NLP techniques. On the backend, I integrated APIs and a database to manage and retrieve relevant information efficiently. The frontend provides a clean and responsive interface for smooth user interaction. This project highlights my skills in full stack development, natural language processing, and real-time data handling, and demonstrates how AI can be applied in areas like customer support, education, and automation.</p>
+          </article>
+          <article class="project" role="listitem">
+            <h3>AI smart Trash Can</h3>
+            <p>I developed an AI-powered smart trash bin designed to encourage children to dispose of waste properly. The bin uses sensors and AI to detect usage and displays entertaining videos or photos to make the experience fun and engaging. This helps build good waste disposal habits in kids while promoting environmental awareness. By combining technology with playful learning, the project offers an innovative solution that is both eco-friendly and educational.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" style="margin-top:30px">
+        <h2>About</h2>
+        <div class="card" style="margin-top:12px">
+          <p style="margin:0;color:var(--muted)">I'm a passionate full stack developer with a strong drive to learn and adapt quickly. I thrive on exploring new technologies and mastering them in a short time, constantly pushing myself to stay ahead in a fast-evolving field. During my college days, I was recognized for my leadership qualities and effective orating skills, which helped me lead teams and communicate ideas with confidence and clarity.</p>
+      </section>
+
+      <section id="contact" style="margin-top:30px">
+        <h2>Contact</h2>
+        <div class="card" style="margin-top:12px">
+          <form onsubmit="event.preventDefault(); alert('Thanks — form demo only')">
+            <div class="contact">
+              <input type="text" placeholder="Your full name" aria-label="Your full name" required>
+              <input type="email" placeholder="Email" aria-label="Email address" required>
+              <textarea placeholder="How can I help?" aria-label="Message"></textarea>
+            </div>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <button class="btn" type="submit">Send message</button>
+              <button class="btn secondary" type="button" onclick="copyEmail()">Copy email</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> MARIA REJO</div>
+      <div style="display:flex;gap:12px">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function scrollToSection(id){
+      location.hash = id;
+    }
+    function copyEmail(){
+      navigator.clipboard?.writeText('rejomaria60@gmail.com')
+        .then(()=> alert('Email copied to clipboard'))
+        .catch(()=> alert('Copy failed — use rejomaria60@gmailcom'))
+    }
+  </script>
+</body>
+</html>
